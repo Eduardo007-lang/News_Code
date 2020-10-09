@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Primeiro passos com DOM </title>
-    <style>
-        body{
+   <style>
+       body{
 
-            background-color: blueviolet;
-            color: white;
-            font: normal 10pt Arial;
+                background: black;
+                color: white;
+                  
 
 
-        }
-    </style>
+       }
+   </style>
 </head>
 <body>
     <h1>Iniciando estudos com DOM  </h1>
@@ -21,19 +21,6 @@
     <p>Apresentando ao usuário o <strong>DOM</strong> em JavaScript</p>
     <div id = 'msg'>Clique em mim</div>
     <script>
-
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[0]
-
-        var d = document.getElementById('msg')
-        d.style.background = 'yellow'
-        d.innerText = 'Estou aguardando...'
-    //document.write('Esta escrito: ' + d.innerText)
-
-       var a = document.getElementsByTagName('h1')[0]
-
-       document.write('Esta escrito: '+ a.innerText)
-       
     </script>
 </body>
 </html>
