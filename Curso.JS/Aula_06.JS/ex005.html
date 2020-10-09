@@ -22,17 +22,10 @@
     <div id = 'msg'>Clique em mim</div>
     <script>
 
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[0]
+        var p1 = document.getElementsByName('p')[0]
+        //var p1 = document.getElementsByName('p')[1]
+        document.write(p1.innerText)
 
-        var d = document.getElementById('msg')
-        d.style.background = 'yellow'
-        d.innerText = 'Estou aguardando...'
-    //document.write('Esta escrito: ' + d.innerText)
-
-       var a = document.getElementsByTagName('h1')[0]
-
-       document.write('Esta escrito: '+ a.innerText)
        
     </script>
 </body>
