@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manpulando_DOM</title>
+    <style>
+        body {
+            background: blue;
+            color: yellow;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Casa de Eventos</h1>
+    <p><strong>Todo tipo de eventos</strong></p>
+    <p><strong>Melhor espaço</strong></p>
+    <div id = 'vr'> Veja Mais </div>
+    <script>
+
+        //variavel d recebendo a referencia do elemento através do ID 'vr'
+       // var d = document.querySelector('dir#vr')
+          var d1 = document.getElementById('vr')
+        //modificando a referencia interna do texto 'Veja mais' para 'Festinha'
+        d.innerText = 'Festinha'
+        //alterando o estilo de cor do amarelo para marrom 
+        d.style.color = 'brown'
+        //alterando estilo de cor de fundo da linha para cor rosa
+        d.style.background = 'pink'
+
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('O local serve para quais tipos de eventos ? ' + p1.innerText)
+
+    </script>
+</body>
+</html>
