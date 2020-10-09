@@ -8,19 +8,21 @@
        body{
 
                 background: black;
-                color: white;
-                  
-
-
+                color: white;     
        }
    </style>
 </head>
 <body>
-    <h1>Iniciando estudos com DOM  </h1>
-    <p>Aqui vai o resultado </p>
-    <p>Apresentando ao usuário o <strong>DOM</strong> em JavaScript</p>
+    <h1>PRATICANDO DOM </h1>
+    <p>Olá!</p>
+    <p> O pior refrigerante é a <strong>COCA-COLA</strong> ninguém merece!</p>
     <div id = 'msg'>Clique em mim</div>
     <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        var p2 = document.getElementesBytagName('p')[1]
+        //document.write('Mostra o valor inserido na varivale p1 na posição [0] da tag p: ' + p1.innerText)
+        document.write('Mostra o valor na posição [0] da tag p: ' +  p1.innerText)
+        document.write('Mostra o valor da tag p  na posição [1]: ' + p2.innerText)
     </script>
 </body>
 </html>
