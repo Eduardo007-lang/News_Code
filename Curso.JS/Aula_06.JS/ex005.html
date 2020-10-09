@@ -18,11 +18,35 @@
     <p> O pior refrigerante é a <strong>COCA-COLA</strong> ninguém merece!</p>
     <div id = 'msg'>Clique em mim</div>
     <script>
+        // variavel corpo 
+        var corpo = document.body
+        corpo.style.background = 'red'
+
+        document.write(document.URL)
+
+      
+
+
+        //buscando o valor digitado dentro da tag p na posicao 0 e inserindo na variavel p1
         var p1 = document.getElementsByTagName('p')[0]
+        //buscando o valor digitado dentro da tag p na posicao 1 e inserindo na variavel p2
         var p2 = document.getElementesBytagName('p')[1]
-        //document.write('Mostra o valor inserido na varivale p1 na posição [0] da tag p: ' + p1.innerText)
+
+        //selecionado o texto interno(dentro) da variavel p1 e retornando esse valor interno pro usuário
         document.write('Mostra o valor na posição [0] da tag p: ' +  p1.innerText)
         document.write('Mostra o valor da tag p  na posição [1]: ' + p2.innerText)
+        
+        p1.style.color = 'red'
+        p2.style.color = 'yellow'
+
+        var d = document.getElementById('msg')
+        d.innerText = 'cagando'
+        d.style.background = 'green'
+       
+
+
+
+
     </script>
 </body>
 </html>
