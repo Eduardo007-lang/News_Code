@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>
+        Calculadora de Multiplicação
+    </h1>
+    <input type="Number" name='textn1' id="textn1">
+    <input type="Numeber" name='textn2' id="textn2">
+    <input type="button" value="Multiplicar" id='button' onclick= 'multiplicar ()' >
+    <div id='res' >Resultado da Multiplicação</div>
+    <script>
+        function multiplicar(){
+            var text1 = document.querySelector('input#textn1')
+            var text2 = document.querySelector('input#textn2')
+            var res = document.querySelector('div#button')
+            var n1 = Number(text1)
+            var n2 = Number(text2)
+           
+
+            var s = n1 + n2
+        }
+    </script>
+</body>
+</html>
