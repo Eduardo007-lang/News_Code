@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+<<<<<<< HEAD
     <style>
        body {
            background: blue;
@@ -19,6 +20,28 @@
        div#res {
             margin-top: 20px;
        }
+=======
+
+    <style>
+        body{
+
+            font: normal 18pt Arial;
+            background: blue;
+
+        }
+        input{
+            font:normal 18pt Arial;
+            width: 120px;
+
+
+        }
+        div#res{
+
+            margin-top: 20px;
+
+
+        }
+
 
     </style>
 </head>
@@ -26,10 +49,17 @@
     <h1>
         Calculadora de Multiplicação
     </h1>
+
     <input type="Number"  id="textn1">
     <input type="Number"  id="textn2">
     <input type="button" value='Click' id="button" onclick="multiplicar()">
     <div id="res">Resultado da Multiplicação</div>
+
+    <input type="Number" name='textn1' id="textn1">
+    <input type="Number" name='textn2' id="textn2">
+    <input type="button" value='Click aqui' id="button" onclick= 'multiplicar()' >
+    <div id='res'>Resultado da Multiplicação</div>
+
     <script>
         function multiplicar() {
 
@@ -43,7 +73,11 @@
             var s = n1 * n2
 
             res.innerHTML = `A multiplicação de ${n1} x ${n2} = <strong>${s}</strong>`
+            var s = n1 * n2;
+
+            res.innerHTML = `A multiplicação de ${n1} x ${n2} = ${s}`
         }
+
     </script>
 </body>
 </html>
