@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        h1{
+            font: normal 18pt Arial;
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Seu País<strong><h1>
+    Pais: <input type="textpais" id="txtpais">
+    <input type="button" value="Verificar" id="verificar" onclick="calcular()">
+    <div id="res"></div>
+    <Script>
+        function calcular ()
+        var pa = document.querySelector("input#txtpais")
+        var res = document.querySelector("div#res")
+        var ver = String(txtpais.value)
+
+        res.innerHTML = `<p>Voce esta em <strong>${pa}<strong></p>`
+
+        if(ver != Brasil){
+            res.innerHTML += `<p>Extrangeiro<p>`
+        }
+        else {
+            res.innerHTML += `Voce é brasileiro`
+        }
+    </Script>
+
+</body>
+</html>
