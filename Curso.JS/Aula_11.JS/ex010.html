@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     
     <style>
@@ -17,27 +19,28 @@
         }
     </style>
 
+
+    <title>DETRAN</title>
+
 </head>
 <body>
-
     <h1>Sistema de Multas</h1>
-   Velocidade do carro:  <input type="number" name="txtvel" id='txtvel'> km/h
-   <input type= 'button' value='verificar' onclick='calcular()'>
-   <div id='Res'>
-   <script>
+    Velocidade do carro:<input type="number" id="txtvel"> Km/h
+    <input type="button" id = "btnVel" value= " Verificar" onclick= "calcular()">  
+    <div id="res"> 
 
-       function calcular (){
-       var txtv = document.querySelector('input#txtvel')
-       var res = document.querySelector('div#Res')
-       var vel = Number(txtv.value)
-       res.innerHTML = `Sua velocidade atual é de <strong>${vel}</strong> Km/h` 
+    <script>
+        function calcular(){
+        var txtv = document.querySelector("input#txtvel")
+        var res = document.querySelector("div#res")
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h<strong></p>`
             if(vel > 60) {
-                res.innerHTML += '<p>voce esta <strong>multado</strong> por excesso de velocidade!</p>'
+                res.innerHTML += `<p>Voce esta <strong>MULTADO</strong> por excesso de velocidade<p>`
+                
             }
-            res.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`
-            }
-
-   </script>
-
+            res.innerHTML += `<p> Dirija sempre com cinto de <strong>SEGURANÇA</strong></p>`
+        }
+    </script>
 </body>
 </html>
