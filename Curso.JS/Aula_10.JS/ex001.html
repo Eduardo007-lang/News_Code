@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
+
         div#area {
-            background: green;
-            color: white;
+            background:blueviolet;
+            color:black;
             width: 200px;
             height: 200px;
             line-height: 200px;
@@ -18,7 +19,7 @@
 </head>
 <body>
     <div id="area" onclick="clicar()" onmouseenter="Entrar()" onmouseout="sair()">
-        interaja...
+        Interaja...
     </div>
 
     <script>
@@ -32,20 +33,25 @@
 
 
         
-            //Funcoes
+            //Funcao de  click
             function clicar ()
             {
                 a.innerText = 'Clicou!';
-                a.style.background = "red";
+                a.style.background = "Blue";
             }
+
+            //Funcao ao passar o curso do mouse em cima da div, mostrando a msg 'Entrou' e mudando a cor da div pra marrom
             function Entrar ()
             {
-                a.innerText='Entrou!';
+                a.innerText ='Entrou!';
+                a.style.background = 'Green'
             }
+
+            //Funcao identifica quando o cursor do mouse sai de cima da div mostrando a msg 'Saiu!' e mudando a cor da div pro rosa.
             function sair ()
             {
                 a.innerText ='Saiu!';
-                a.style.background= 'green';
+                a.style.background= 'Red';
             }
     </script>
 </body>
